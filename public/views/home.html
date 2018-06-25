@@ -1,0 +1,13 @@
+<h1>Welcome</h1>
+
+<div>
+	<a href="#/home">Home</a>
+	<a href="#/post" ng-if="flg">Post a Job</a>
+	<a href="#/jobposts">View Jobs</a>
+	<a href="#/appjobs" ng-if="!flg">Applied Jobs</a>
+	<a href="#/savejobs" ng-if="!flg">Saved Jobs</a>
+	<a href="#/search" ng-if="!flg">Search</a>
+	<button ng-click="logout()">Logout</button>
+</div>
+
+

@@ -1,0 +1,24 @@
+<h1>Post a Job</h1>
+
+<div>
+	<label>Title</label><br>
+	<input type="text" placeholder="title" ng-model="posts.title"><br>
+
+	<label>Description</label><br>
+	<textarea ng-model="posts.desc"></textarea><br>
+
+	<label>Keyword</label><br>
+	<input type="text" ng-model="posts.keyword"><br>
+
+	<label>Location</label><br>
+	<input type="location" ng-model="posts.location"><br><br>
+
+	<button ng-click="post()">Post</button>
+</div><br><br>
+
+<div>Preview<br><br>
+	<label>Title:{{posts.title}}</label><br>
+	<label>Description:{{posts.desc}}</label><br>
+	<label>Keywords:{{posts.keyword}}</label><br>
+	<label>Location:{{posts.location}}</label><br>
+</div>

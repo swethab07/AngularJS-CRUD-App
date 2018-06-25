@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MEAN Stack App</title>
+	<script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>	
+	<script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.5/angular-resource.min.js"></script>
+	
+</head>
+<body ng-app="myapp">
+	<h1 ng-hide="isLoggedIn">Welcome to Job portal!!!</h1>
+	<div>
+		<a href="#/register" ng-hide="isLoggedIn">Register</a>
+		<a href="#/login" ng-hide="isLoggedIn">Login</a>
+	</div>
+	<div ng-view=""></div>
+	<script src="js/app.js" ></script>
+</body>
+</html>

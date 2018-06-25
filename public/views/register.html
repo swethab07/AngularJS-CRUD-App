@@ -1,0 +1,26 @@
+<h1>Registration Form</h1>
+<div>
+	<label>Username</label>
+	<input type="text" placeholder="User Name" ng-model="registerForm.username">
+</div>
+<div>
+	<label>E-Mail</label>
+	<input type="email" placeholder="E-Mail" ng-model="registerForm.email">
+</div>
+<div>
+	<label>Password</label>
+	<input type="password" placeholder="Password" ng-model="registerForm.password">
+</div>
+<div>
+	<label>Location</label>
+	<input type="text" placeholder="Location" ng-model="registerForm.location">
+</div>
+<div>
+	<label>Who</label>
+	<select ng-model="registerForm.usertype">
+      <option value="">---Please select---</option> 
+      <option value="jobseeker">Job Seeker</option>
+      <option value="company">Company</option>
+    </select><br>
+</div>
+<button type="submit" ng-click="register()">Register</button>

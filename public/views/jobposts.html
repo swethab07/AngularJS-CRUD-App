@@ -1,0 +1,12 @@
+<h1>Jobs</h1>
+
+<div ng-repeat="post in posts"><br><br><b>Developer</b><br>
+	<label for="title">Title:{{post.title}}</label><br>
+	<label for="desc">Description:{{post.desc}}</label><br>
+	<label for="keyword">Keywords:{{post.keyword}}</label><br>
+	<label for="location">Location:{{post.location}}</label><br>
+	<button ng-click="applyjob()">Apply Job</button>
+	<button>Applied</button>
+	<button ng-click="savejob()">Save Job</button>
+	<button>Saved</button>&nbsp;&nbsp;
+</div>
